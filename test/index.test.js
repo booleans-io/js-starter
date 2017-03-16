@@ -10,7 +10,8 @@ describe('index handler function', () => {
   it('should eventually call `callback` with a boolean', (done) => {
     Promise.resolve(index.handler(null, null, callbackSpy))
     .then(() => {
-      expect(typeof callbackSpy.mock.calls[0][0]).toBe('boolean');
+      expect(callbackSpy.mock.calls[0][0]).toBeNull();
+      expect(typeof callbackSpy.mock.calls[0][1]).toBe('boolean');
       done();
     });
   });

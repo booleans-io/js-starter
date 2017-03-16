@@ -11,6 +11,6 @@ exports.handler = (event, context, callback) => {
   return worker.doWork()
   .then((result) => {
     // `callback` must eventually be called with a Boolean value
-    callback(result);
+    callback(null, result);
   });
 };
