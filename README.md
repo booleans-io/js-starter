@@ -1,5 +1,7 @@
 # Booleans JS template
 
+[![CircleCI](https://circleci.com/gh/booleans-io/js-starter.svg?style=svg)](https://circleci.com/gh/booleans-io/js-starter)
+
 ## Setup
 
     npm install
